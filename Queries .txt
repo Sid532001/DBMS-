@@ -109,3 +109,9 @@ SELECT COUNT(*) FROM policekillingsus WHERE manner_of_death = 'Shot'
 
 Q-20. Write an SQL query to print details of the criminals whose age lies between 40 and 50.
 Select * from policekillingsus where age between 40 and 50;
+
+Q.21.Write a SQL query to show inner join of two tables
+SELECT shareracebycity.City,shareracebycity.share_white, policekillingsus.name, policekillingsus.manner_of_death FROM shareracebycity INNER JOIN policekillingsus ON shareracebycity.City = policekillingsus.manner_of_death
+
+Q.22.Write a SQL query to show cross join of two tables
+SELECT w.name AS namee, c.City AS Cityy FROM policekillingsus w CROSS JOIN shareracebycity c
