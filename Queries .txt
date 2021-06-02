@@ -115,3 +115,8 @@ SELECT shareracebycity.City,shareracebycity.share_white, policekillingsus.name, 
 
 Q.22.Write a SQL query to show cross join of two tables
 SELECT w.name AS namee, c.City AS Cityy FROM policekillingsus w CROSS JOIN shareracebycity c
+
+
+
+Q.23 Write a SQL query to show the nth median income from Median_income.
+SELECT Median_Income FROM medianhouseholdincome2015 ORDER BY Median_Income DESC LIMIT 4,1
