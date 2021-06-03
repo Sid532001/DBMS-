@@ -120,3 +120,13 @@ SELECT w.name AS namee, c.City AS Cityy FROM policekillingsus w CROSS JOIN share
 
 Q.23 Write a SQL query to show the nth median income from Median_income.
 SELECT Median_Income FROM medianhouseholdincome2015 ORDER BY Median_Income DESC LIMIT 4,1
+
+
+Q.24 Write a SQL query to show left join of two tables.
+SELECT medianhouseholdincome2015.City,medianhouseholdincome2015.Median_Income,percentagepeoplebelowpovertylevel.City,percentagepeoplebelowpovertylevel.Median_Income FROM medianhouseholdincome2015 LEFT JOIN percentagepeoplebelowpovertylevel ON medianhouseholdincome2015.Median_Income = medianhouseholdincome2015.Median_Income
+
+
+Q.25 Write a SQL query to right join of two tables.
+SELECT medianhouseholdincome2015.City,medianhouseholdincome2015.Median_Income,percentagepeoplebelowpovertylevel.City,percentagepeoplebelowpovertylevel.Median_Income FROM medianhouseholdincome2015 RIGHT JOIN percentagepeoplebelowpovertylevel ON medianhouseholdincome2015.Median_Income = medianhouseholdincome2015.Median_Income
+
+Q.26  
